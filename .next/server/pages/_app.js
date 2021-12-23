@@ -5,7 +5,7 @@ exports.id = 888;
 exports.ids = [888];
 exports.modules = {
 
-/***/ 860:
+/***/ 434:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 // ESM COMPAT FLAG
@@ -81,9 +81,9 @@ var head_default = /*#__PURE__*/__webpack_require__.n(head_namespaceObject);
 var next_link = __webpack_require__(664);
 // EXTERNAL MODULE: ./node_modules/next/image.js
 var next_image = __webpack_require__(675);
-;// CONCATENATED MODULE: external "@emotion/styled"
-const styled_namespaceObject = require("@emotion/styled");
-var styled_default = /*#__PURE__*/__webpack_require__.n(styled_namespaceObject);
+// EXTERNAL MODULE: external "@emotion/styled"
+var styled_ = __webpack_require__(480);
+var styled_default = /*#__PURE__*/__webpack_require__.n(styled_);
 ;// CONCATENATED MODULE: ./components/logo.js
 
 
@@ -130,8 +130,8 @@ const Logo = ()=>{
 };
 /* harmony default export */ const logo = (Logo);
 
-;// CONCATENATED MODULE: external "@chakra-ui/icons"
-const icons_namespaceObject = require("@chakra-ui/icons");
+// EXTERNAL MODULE: external "@chakra-ui/icons"
+var icons_ = __webpack_require__(513);
 ;// CONCATENATED MODULE: ./components/theme-toggle.js
 
 
@@ -141,8 +141,8 @@ const ThemeToggle = ()=>{
     return(/*#__PURE__*/ jsx_runtime_.jsx(react_.IconButton, {
         "aria-label": "Toggle theme",
         colorScheme: (0,react_.useColorModeValue)('purple', 'orange'),
-        icon: (0,react_.useColorModeValue)(/*#__PURE__*/ jsx_runtime_.jsx(icons_namespaceObject.MoonIcon, {
-        }), /*#__PURE__*/ jsx_runtime_.jsx(icons_namespaceObject.SunIcon, {
+        icon: (0,react_.useColorModeValue)(/*#__PURE__*/ jsx_runtime_.jsx(icons_.MoonIcon, {
+        }), /*#__PURE__*/ jsx_runtime_.jsx(icons_.SunIcon, {
         })),
         onClick: toggleColorMode
     }));
@@ -248,7 +248,7 @@ const Navbar = (props)=>{
                                 children: [
                                     /*#__PURE__*/ jsx_runtime_.jsx(react_.MenuButton, {
                                         as: react_.IconButton,
-                                        icon: /*#__PURE__*/ jsx_runtime_.jsx(icons_namespaceObject.HamburgerIcon, {
+                                        icon: /*#__PURE__*/ jsx_runtime_.jsx(icons_.HamburgerIcon, {
                                         }),
                                         variant: "outline",
                                         "aria-label": "Options"
@@ -373,10 +373,24 @@ const Website = ({ Component , pageProps , router  })=>{
 
 /***/ }),
 
+/***/ 513:
+/***/ ((module) => {
+
+module.exports = require("@chakra-ui/icons");
+
+/***/ }),
+
 /***/ 930:
 /***/ ((module) => {
 
 module.exports = require("@chakra-ui/react");
+
+/***/ }),
+
+/***/ 480:
+/***/ ((module) => {
+
+module.exports = require("@emotion/styled");
 
 /***/ }),
 
@@ -513,7 +527,7 @@ module.exports = require("react/jsx-runtime");
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [730,61], () => (__webpack_exec__(860)));
+var __webpack_exports__ = __webpack_require__.X(0, [730,664,675], () => (__webpack_exec__(434)));
 module.exports = __webpack_exports__;
 
 })();

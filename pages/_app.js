@@ -3,12 +3,14 @@ import theme from '../libs/theme'
 import Layout from '../components/layouts/main'
 import Fonts from '../components/fonts'
 
+
 const Website = ({ Component, pageProps, router }) => {
     return (
         <ChakraProvider theme={theme}>
             <Fonts />
             <Layout router={router}>
                 <Component {...pageProps} key={router.route} />
+              
             </Layout>
         </ChakraProvider>
     )

@@ -1,4 +1,11 @@
-import { Container, Box, Heading, Image, useColorModeValue } from '@chakra-ui/react'
+/* eslint-disable no-unused-vars */
+import { Container, Box, Heading, Image, useColorModeValue, Button } from '@chakra-ui/react'
+import { ChevronRightIcon } from '@chakra-ui/icons'
+import  Link from 'next/link'
+import NextLink from 'next/link'
+import Section from '../components/layouts/section'
+import Paragraph from '../components/paragraph'
+import { BioSection, BioYear } from './bio'
 
 const Page = () => {
   return (
@@ -32,6 +39,41 @@ const Page = () => {
           alt="ProfileImage"
         />
       </Box>
+      {/* <Section delay={0.1}>
+          <Heading as="h3" variant="section-title">
+              Work
+          </Heading>
+          <Paragraph>Farid Guzman is a Frontend Developer based in The Hague
+          <NextLink href="/works/project1">
+              <Link>
+              project 1
+              </Link>
+          </NextLink>
+          .
+          </Paragraph>
+          <Box align="center" my={4}>
+              <NextLink href="/works">
+                  <Button rightIcon={<ChevronRightIcon/>} colorScheme="teal">My portfolio</Button>
+
+                 
+              </NextLink>
+          </Box>
+      </Section>
+
+      <Section delay={0.2}>
+          <Heading as="h3" variant="section-title">
+              Bio
+          </Heading>
+          <BioSection>
+              <BioYear>1991</BioYear>
+              Born in Cartagena Colombia
+          </BioSection>
+
+          <BioSection>
+              <BioYear>2018</BioYear>
+              Graduated Interactive Media Design from the Royal Academy of Art in The Hague
+          </BioSection>
+      </Section> */}
     </Container>
   )
 }
