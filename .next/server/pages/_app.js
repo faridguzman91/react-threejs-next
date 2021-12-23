@@ -180,15 +180,41 @@ const Navbar = (props)=>{
                                     variant: "outline",
                                     "aria-label": "Options"
                                 }),
-                                /*#__PURE__*/ jsx_runtime_.jsx(react_.MenuList, {
-                                    children: /*#__PURE__*/ jsx_runtime_.jsx(next_link["default"], {
-                                        href: "/",
-                                        passHref: true,
-                                        children: /*#__PURE__*/ jsx_runtime_.jsx(react_.MenuItem, {
-                                            as: react_.Link,
-                                            children: "About"
+                                /*#__PURE__*/ (0,jsx_runtime_.jsxs)(react_.MenuList, {
+                                    children: [
+                                        /*#__PURE__*/ jsx_runtime_.jsx(next_link["default"], {
+                                            href: "/about",
+                                            passHref: true,
+                                            children: /*#__PURE__*/ jsx_runtime_.jsx(react_.MenuItem, {
+                                                as: react_.Link,
+                                                children: "About"
+                                            })
+                                        }),
+                                        /*#__PURE__*/ jsx_runtime_.jsx(next_link["default"], {
+                                            href: "/works",
+                                            passHref: true,
+                                            children: /*#__PURE__*/ jsx_runtime_.jsx(react_.MenuItem, {
+                                                as: react_.Link,
+                                                children: "Works"
+                                            })
+                                        }),
+                                        /*#__PURE__*/ jsx_runtime_.jsx(next_link["default"], {
+                                            href: "/works",
+                                            passHref: true,
+                                            children: /*#__PURE__*/ jsx_runtime_.jsx(react_.MenuItem, {
+                                                as: react_.Link,
+                                                children: "Posts"
+                                            })
+                                        }),
+                                        /*#__PURE__*/ jsx_runtime_.jsx(next_link["default"], {
+                                            href: "https://www.faridguzman.com",
+                                            passHref: true,
+                                            children: /*#__PURE__*/ jsx_runtime_.jsx(react_.MenuItem, {
+                                                as: react_.Link,
+                                                children: "Website"
+                                            })
                                         })
-                                    })
+                                    ]
                                 })
                             ]
                         })
