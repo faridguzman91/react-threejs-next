@@ -5,7 +5,7 @@ exports.id = 888;
 exports.ids = [888];
 exports.modules = {
 
-/***/ 953:
+/***/ 860:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 // ESM COMPAT FLAG
@@ -334,22 +334,38 @@ const Main = ({ children , router  })=>{
 };
 /* harmony default export */ const main = (Main);
 
+;// CONCATENATED MODULE: external "@emotion/react"
+const external_emotion_react_namespaceObject = require("@emotion/react");
+;// CONCATENATED MODULE: ./components/fonts.js
+
+
+const Fonts = ()=>/*#__PURE__*/ jsx_runtime_.jsx(external_emotion_react_namespaceObject.Global, {
+        styles: `@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');`
+    })
+;
+/* harmony default export */ const components_fonts = (Fonts);
+
 ;// CONCATENATED MODULE: ./pages/_app.js
 
 
 
 
 
+
 const Website = ({ Component , pageProps , router  })=>{
-    return(/*#__PURE__*/ jsx_runtime_.jsx(react_.ChakraProvider, {
+    return(/*#__PURE__*/ (0,jsx_runtime_.jsxs)(react_.ChakraProvider, {
         theme: libs_theme,
-        children: /*#__PURE__*/ jsx_runtime_.jsx(main, {
-            router: router,
-            children: /*#__PURE__*/ (0,external_react_.createElement)(Component, {
-                ...pageProps,
-                key: router.route
+        children: [
+            /*#__PURE__*/ jsx_runtime_.jsx(components_fonts, {
+            }),
+            /*#__PURE__*/ jsx_runtime_.jsx(main, {
+                router: router,
+                children: /*#__PURE__*/ (0,external_react_.createElement)(Component, {
+                    ...pageProps,
+                    key: router.route
+                })
             })
-        })
+        ]
     }));
 };
 /* harmony default export */ const _app = (Website);
@@ -497,7 +513,7 @@ module.exports = require("react/jsx-runtime");
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [730,61], () => (__webpack_exec__(953)));
+var __webpack_exports__ = __webpack_require__.X(0, [730,61], () => (__webpack_exec__(860)));
 module.exports = __webpack_exports__;
 
 })();
