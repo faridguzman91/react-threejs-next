@@ -5,7 +5,7 @@ exports.id = 888;
 exports.ids = [888];
 exports.modules = {
 
-/***/ 193:
+/***/ 953:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 // ESM COMPAT FLAG
@@ -22,6 +22,58 @@ var jsx_runtime_ = __webpack_require__(997);
 var external_react_ = __webpack_require__(689);
 // EXTERNAL MODULE: external "@chakra-ui/react"
 var react_ = __webpack_require__(930);
+;// CONCATENATED MODULE: external "@chakra-ui/theme-tools"
+const theme_tools_namespaceObject = require("@chakra-ui/theme-tools");
+;// CONCATENATED MODULE: ./libs/theme.js
+
+
+const styles = {
+    global: (props)=>({
+            body: {
+                bg: (0,theme_tools_namespaceObject.mode)('#f0e7db', '#202023')(props)
+            }
+        })
+};
+const components = {
+    Heading: {
+        variants: {
+            'section-title': {
+                textDecoration: 'underline',
+                fontSize: 20,
+                textUnderlineOffset: 6,
+                textDecorationColor: '#525252',
+                textDecorationThickness: 4,
+                margiinTop: 3,
+                marginBottom: 4
+            }
+        }
+    },
+    Link: {
+        baseStyle: {
+            color: '#3d7aed',
+            textUnderlineOffset: 3
+        }
+    }
+};
+const fonts = {
+    heading: " 'M PLUS Rounded 1c' "
+};
+const colors = {
+    glassTeal: '#88cca'
+};
+const config = {
+    initialColorMode: 'dark',
+    useSystemColorMode: true
+};
+const theme = (0,react_.extendTheme)({
+    config,
+    styles,
+    components,
+    colors,
+    fonts
+});
+/* harmony default export */ const libs_theme = (theme);
+
 ;// CONCATENATED MODULE: external "next/head"
 const head_namespaceObject = require("next/head");
 var head_default = /*#__PURE__*/__webpack_require__.n(head_namespaceObject);
@@ -80,9 +132,27 @@ const Logo = ()=>{
 
 ;// CONCATENATED MODULE: external "@chakra-ui/icons"
 const icons_namespaceObject = require("@chakra-ui/icons");
+;// CONCATENATED MODULE: ./components/theme-toggle.js
+
+
+
+const ThemeToggle = ()=>{
+    const { toggleColorMode  } = (0,react_.useColorMode)();
+    return(/*#__PURE__*/ jsx_runtime_.jsx(react_.IconButton, {
+        "aria-label": "Toggle theme",
+        colorScheme: (0,react_.useColorModeValue)('purple', 'orange'),
+        icon: (0,react_.useColorModeValue)(/*#__PURE__*/ jsx_runtime_.jsx(icons_namespaceObject.MoonIcon, {
+        }), /*#__PURE__*/ jsx_runtime_.jsx(icons_namespaceObject.SunIcon, {
+        })),
+        onClick: toggleColorMode
+    }));
+};
+/* harmony default export */ const theme_toggle = (ThemeToggle);
+
 ;// CONCATENATED MODULE: ./components/navbar.js
 
 /* eslint-disable no-unused-vars */ 
+
 
 
 
@@ -162,63 +232,67 @@ const Navbar = (props)=>{
                         })
                     ]
                 }),
-                /*#__PURE__*/ jsx_runtime_.jsx(react_.Box, {
+                /*#__PURE__*/ (0,jsx_runtime_.jsxs)(react_.Box, {
                     flex: 1,
                     align: "right",
-                    children: /*#__PURE__*/ jsx_runtime_.jsx(react_.Box, {
-                        ml: 2,
-                        display: {
-                            base: 'inline-block',
-                            md: 'none'
-                        },
-                        children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(react_.Menu, {
-                            children: [
-                                /*#__PURE__*/ jsx_runtime_.jsx(react_.MenuButton, {
-                                    as: react_.IconButton,
-                                    icon: /*#__PURE__*/ jsx_runtime_.jsx(icons_namespaceObject.HamburgerIcon, {
+                    children: [
+                        /*#__PURE__*/ jsx_runtime_.jsx(theme_toggle, {
+                        }),
+                        /*#__PURE__*/ jsx_runtime_.jsx(react_.Box, {
+                            ml: 2,
+                            display: {
+                                base: 'inline-block',
+                                md: 'none'
+                            },
+                            children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(react_.Menu, {
+                                children: [
+                                    /*#__PURE__*/ jsx_runtime_.jsx(react_.MenuButton, {
+                                        as: react_.IconButton,
+                                        icon: /*#__PURE__*/ jsx_runtime_.jsx(icons_namespaceObject.HamburgerIcon, {
+                                        }),
+                                        variant: "outline",
+                                        "aria-label": "Options"
                                     }),
-                                    variant: "outline",
-                                    "aria-label": "Options"
-                                }),
-                                /*#__PURE__*/ (0,jsx_runtime_.jsxs)(react_.MenuList, {
-                                    children: [
-                                        /*#__PURE__*/ jsx_runtime_.jsx(next_link["default"], {
-                                            href: "/about",
-                                            passHref: true,
-                                            children: /*#__PURE__*/ jsx_runtime_.jsx(react_.MenuItem, {
-                                                as: react_.Link,
-                                                children: "About"
+                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)(react_.MenuList, {
+                                        children: [
+                                            /*#__PURE__*/ jsx_runtime_.jsx(next_link["default"], {
+                                                href: "/about",
+                                                passHref: true,
+                                                children: /*#__PURE__*/ jsx_runtime_.jsx(react_.MenuItem, {
+                                                    as: react_.Link,
+                                                    children: "About"
+                                                })
+                                            }),
+                                            /*#__PURE__*/ jsx_runtime_.jsx(next_link["default"], {
+                                                href: "/works",
+                                                passHref: true,
+                                                children: /*#__PURE__*/ jsx_runtime_.jsx(react_.MenuItem, {
+                                                    as: react_.Link,
+                                                    children: "Works"
+                                                })
+                                            }),
+                                            /*#__PURE__*/ jsx_runtime_.jsx(next_link["default"], {
+                                                href: "/works",
+                                                passHref: true,
+                                                children: /*#__PURE__*/ jsx_runtime_.jsx(react_.MenuItem, {
+                                                    as: react_.Link,
+                                                    children: "Posts"
+                                                })
+                                            }),
+                                            /*#__PURE__*/ jsx_runtime_.jsx(next_link["default"], {
+                                                href: "https://www.faridguzman.com",
+                                                passHref: true,
+                                                children: /*#__PURE__*/ jsx_runtime_.jsx(react_.MenuItem, {
+                                                    as: react_.Link,
+                                                    children: "Website"
+                                                })
                                             })
-                                        }),
-                                        /*#__PURE__*/ jsx_runtime_.jsx(next_link["default"], {
-                                            href: "/works",
-                                            passHref: true,
-                                            children: /*#__PURE__*/ jsx_runtime_.jsx(react_.MenuItem, {
-                                                as: react_.Link,
-                                                children: "Works"
-                                            })
-                                        }),
-                                        /*#__PURE__*/ jsx_runtime_.jsx(next_link["default"], {
-                                            href: "/works",
-                                            passHref: true,
-                                            children: /*#__PURE__*/ jsx_runtime_.jsx(react_.MenuItem, {
-                                                as: react_.Link,
-                                                children: "Posts"
-                                            })
-                                        }),
-                                        /*#__PURE__*/ jsx_runtime_.jsx(next_link["default"], {
-                                            href: "https://www.faridguzman.com",
-                                            passHref: true,
-                                            children: /*#__PURE__*/ jsx_runtime_.jsx(react_.MenuItem, {
-                                                as: react_.Link,
-                                                children: "Website"
-                                            })
-                                        })
-                                    ]
-                                })
-                            ]
+                                        ]
+                                    })
+                                ]
+                            })
                         })
-                    })
+                    ]
                 })
             ]
         })
@@ -265,8 +339,10 @@ const Main = ({ children , router  })=>{
 
 
 
+
 const Website = ({ Component , pageProps , router  })=>{
     return(/*#__PURE__*/ jsx_runtime_.jsx(react_.ChakraProvider, {
+        theme: libs_theme,
         children: /*#__PURE__*/ jsx_runtime_.jsx(main, {
             router: router,
             children: /*#__PURE__*/ (0,external_react_.createElement)(Component, {
@@ -421,7 +497,7 @@ module.exports = require("react/jsx-runtime");
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [730,61], () => (__webpack_exec__(193)));
+var __webpack_exports__ = __webpack_require__.X(0, [730,61], () => (__webpack_exec__(953)));
 module.exports = __webpack_exports__;
 
 })();
