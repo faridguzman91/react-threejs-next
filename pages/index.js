@@ -5,7 +5,7 @@ import  Link from 'next/link'
 import NextLink from 'next/link'
 import Section from '../components/layouts/section'
 import Paragraph from '../components/paragraph'
-import { BioSection, BioYear } from './bio'
+import { BioSection, BioYear } from '../components/bio'
 
 const Page = () => {
   return (
@@ -39,23 +39,23 @@ const Page = () => {
           alt="ProfileImage"
         />
       </Box>
-      {/* <Section delay={0.1}>
+      <Section delay={0.1}>
           <Heading as="h3" variant="section-title">
               Work
           </Heading>
           <Paragraph>Farid Guzman is a Frontend Developer based in The Hague
-          <NextLink href="/works/project1">
-              <Link>
-              project 1
-              </Link>
-          </NextLink>
-          .
-          </Paragraph>
-          <Box align="center" my={4}>
-              <NextLink href="/works">
-                  <Button rightIcon={<ChevronRightIcon/>} colorScheme="teal">My portfolio</Button>
 
-                 
+          <NextLink href="https://www.faridguzman.com">
+            <Box align="center" my={4}>
+               Click here to go to my website
+            </Box>                   
+          </NextLink>
+
+          </Paragraph>
+
+          <Box align="center" my={4}>
+              <NextLink href="works">
+                  <Button rightIcon={<ChevronRightIcon/>} colorScheme="teal">My portfolio</Button>       
               </NextLink>
           </Box>
       </Section>
@@ -73,7 +73,7 @@ const Page = () => {
               <BioYear>2018</BioYear>
               Graduated Interactive Media Design from the Royal Academy of Art in The Hague
           </BioSection>
-      </Section> */}
+      </Section>
     </Container>
   )
 }
