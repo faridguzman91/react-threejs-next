@@ -2,7 +2,7 @@ exports.id = 675;
 exports.ids = [675];
 exports.modules = {
 
-/***/ 45:
+/***/ 8045:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
@@ -12,11 +12,11 @@ __webpack_unused_export__ = ({
     value: true
 });
 exports["default"] = Image;
-var _react = _interopRequireDefault(__webpack_require__(689));
-var _head = _interopRequireDefault(__webpack_require__(957));
-var _toBase64 = __webpack_require__(18);
-var _imageConfig = __webpack_require__(28);
-var _useIntersection = __webpack_require__(190);
+var _react = _interopRequireDefault(__webpack_require__(6689));
+var _head = _interopRequireDefault(__webpack_require__(4957));
+var _toBase64 = __webpack_require__(3018);
+var _imageConfig = __webpack_require__(8028);
+var _useIntersection = __webpack_require__(7190);
 function _defineProperty(obj, key, value) {
     if (key in obj) {
         Object.defineProperty(obj, key, {
@@ -548,10 +548,10 @@ function defaultLoader({ root , src , width , quality  }) {
 
 /***/ }),
 
-/***/ 675:
+/***/ 5675:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-module.exports = __webpack_require__(45)
+module.exports = __webpack_require__(8045)
 
 
 /***/ })

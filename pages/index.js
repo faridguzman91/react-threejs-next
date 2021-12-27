@@ -6,9 +6,11 @@ import NextLink from 'next/link'
 import Section from '../components/layouts/section'
 import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
+import Layout from '../components/layouts/article'
 
 const Page = () => {
   return (
+    <Layout>
     <Container>
       <Box borderRadius="lg" 
            bg={useColorModeValue(useColorModeValue('whiteAlpha.500' , 'whiteAlpha.200'))} 
@@ -75,6 +77,8 @@ const Page = () => {
           </BioSection>
       </Section>
     </Container>
+    </Layout>
+
   )
 }
 
